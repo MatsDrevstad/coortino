@@ -45,7 +45,7 @@ namespace CoorTino
             return new Position(X, Y);   // returnerar ny instans av position som har värdet x,y
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return "(" + X + ", " + Y + ") ";
         }
@@ -66,9 +66,30 @@ namespace CoorTino
             return false;
         }
 
+        public static bool operator <(Position p1, Position p2) // jämför två positioners avstånd från origo(jämför storleken på bägge punkterna.)
+        {
+            if (p1.Lenght() < p2.Lenght())
+            {
+                return true;
+            }
+            else if (p1.Lenght() == p2.Lenght())
+            {
+                if (p1.X > p2.X)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public static Position operator +(Position p1, Position p2)
         {
             return new Position(p1.X + p2.X, p1.Y + p2.Y);
+        }
+
+        public static Position operator -(Position p1, Position p2)
+        {
+            return new Position(p1.X - p2.X, p1.Y - p2.Y);
         }
 
         public static double operator %(Position pos1, Position pos2)
