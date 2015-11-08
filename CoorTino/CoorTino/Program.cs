@@ -15,13 +15,13 @@ namespace CoorTino
             Console.WriteLine(new Position(1, 2) - new Position(3, 6) + "\n");
             Console.WriteLine(new Position(3, 5) % new Position(1, 3) + "\n");
 
-            //SortedPosList list1 = new SortedPosList();
-            //SortedPosList list2 = new SortedPosList();
-            //list1.Add(new Position(3, 7));
-            //list1.Add(new Position(1, 4));
-            //list1.Add(new Position(2, 6));
-            //list1.Add(new Position(2, 3));
-            //Console.WriteLine(list1 + "\n");
+            SortedPosList list1 = new SortedPosList();
+            SortedPosList list2 = new SortedPosList();
+            list1.Add(new Position(3, 7));
+            list1.Add(new Position(1, 4));
+            list1.Add(new Position(2, 6));
+            list1.Add(new Position(2, 3));
+            Console.WriteLine(list1 + "\n");
             //list1.Remove(new Position(2, 6));
             //Console.WriteLine(list1 + "\n");
 

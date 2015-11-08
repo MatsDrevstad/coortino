@@ -8,6 +8,22 @@ namespace CoorTino
 {
     class SortedPosList
     {
-        private List<Position> position = new List<Position>();
+        private List<Position> positions = new List<Position>();
+
+        public int Count()
+        {
+            return positions.Count();
+        }
+
+        public void Add(Position pos)
+        {
+            positions.Add(pos);
+            positions.OrderBy(p => p.Lenght()).ToList();
+        }
+
+        public bool Remove(Position pos)
+        {
+            return false;
+        }
     }
 }
