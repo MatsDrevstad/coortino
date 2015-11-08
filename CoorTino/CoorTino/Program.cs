@@ -22,20 +22,20 @@ namespace CoorTino
             list1.Add(new Position(2, 6));
             list1.Add(new Position(2, 3));
             Console.WriteLine(list1 + "\n");
-            //list1.Remove(new Position(2, 6));
-            //Console.WriteLine(list1 + "\n");
+            list1.Remove(new Position(2, 6));
+            Console.WriteLine(list1 + "\n");
 
-            //list2.Add(new Position(3, 7));
-            //list2.Add(new Position(1, 2));
-            //list2.Add(new Position(3, 6));
-            //list2.Add(new Position(2, 3));
-            //Console.WriteLine((list2 + list1) + "\n");
+            list2.Add(new Position(3, 7));
+            list2.Add(new Position(1, 2));
+            list2.Add(new Position(3, 6));
+            list2.Add(new Position(2, 3));
+            Console.WriteLine((list2 + list1) + "\n");
 
-            //SortedPosList circleList = new SortedPosList();
-            //circleList.Add(new Position(1, 1));
-            //circleList.Add(new Position(2, 2));
-            //circleList.Add(new Position(3, 3));
-            //Console.WriteLine(circleList.CircleContent(new Position(5, 5), 4) + "\n");
+            SortedPosList circleList = new SortedPosList();
+            circleList.Add(new Position(1, 1));
+            circleList.Add(new Position(2, 2));
+            circleList.Add(new Position(3, 3));
+            Console.WriteLine(circleList.CircleContent(new Position(5, 5), 4) + "\n");
 
             /*VG uppgift test
             Console.WriteLine((list2 - list1) + "\n");
